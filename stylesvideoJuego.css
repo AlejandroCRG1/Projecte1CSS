@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: -1em 1.5em;
+    margin-right: 6em;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 60px;
+}
+
+li {
+    display: flex;
+    gap: 1.5em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gameContainer {
+    display: flex;
+}
+
+.gameImage {
+    width: 140%;
+    height: 65vh;
+    background-image: url('https://wallpaperaccess.com/full/1963988.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gameStatistcsContainer {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 100px;
+    line-height: 0.4;
+    letter-spacing: -1;
+}
+
+.tContainer {
+    text-align: left;
+    width: min-content;
+    border: 2px solid red;
+}
+
+.overviewContainer {
+    color: white;
+    background-color:#424549;
+}
+
+.datePlataformsContainer {
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.notaJuego {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+span {
+    font-size: 100px;
+    background: linear-gradient(to bottom, #00ac64, #00ffdd);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
