@@ -21,6 +21,10 @@ nav {
     display: flex;
     justify-content: center;
     border-bottom: 2px solid black;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: +1;
 }
 
 li {
@@ -28,10 +32,15 @@ li {
     justify-content: space-around;
 }
 
-a {
+ul > a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+ul > a:hover {
+    color: #0A91AB; 
 }
 
 main {
@@ -81,6 +90,7 @@ button {
     border: none;
     border-radius: 2px;
     padding: 0.8em;
+    cursor: pointer;
 }
 
 h3 {
@@ -92,18 +102,13 @@ p {
     color: gray;
 }
 
-.vImgs {
-    max-width: 100%; /* Restrict the image's maximum width to the container's width */
-    height: auto;
-}
-
 .secondContainer {
     display: flex;
     gap: 1em;
 }
 
 img {
-    max-width: 100%; /* Restrict the image's maximum width to the container's width */
+    max-width: 100%; 
     height: auto;
 }
 
@@ -115,6 +120,8 @@ aside {
     border: 2px black dotted;
     border-radius: 5px;
     min-width: 22vw;
+    text-align: center;
+    padding: 0px 1em;
 }
 
 .nSection {
@@ -130,6 +137,7 @@ aside {
 }
 
 .nArticle {
+    flex: 1;
     border: 2px solid #0A91AB;
     border-radius: 5px;
     position: relative;
@@ -137,6 +145,8 @@ aside {
 
 span {
     display: block;
+    margin: -1.5em;
+    padding: -1.5em;
     width: auto;
     border: 5px solid #FFC045;
     border-radius: 5px;
@@ -149,8 +159,8 @@ aside > div > p {
 .containerBGimage {
     width: 100%;
     height: 380px;
-    background-image: url('https://i.ytimg.com/vi/QAjwSDecOrU/maxresdefault.jpg');
-    background-size: contain;
+    background-image: url('https://assetsio.reedpopcdn.com/the-last-of-us-hbo-series-character-guide_4efk.h720.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -168,11 +178,6 @@ aside > div > p {
 }
 
 .containerContent {
-    padding: 0.5em;
-    text-align: center;
-}
-
-.rankingDiv {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -182,7 +187,8 @@ aside > div > p {
 
 .profileDiv {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0em 1em;
 }
 
 .rankingImgs {
@@ -195,6 +201,10 @@ aside > div > p {
     background-repeat: no-repeat;
 }
 
+.rankingDiv {
+    padding: 0.5em 1em;
+}
+
 .profileDiv > div > p {
     color: black;
 }
@@ -204,42 +214,39 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 10px; /* Adjust the padding as needed */
+    padding: 10px; 
 }
 
 footer > p {
     color: black;
-    margin: 5px 0; /* Adjust the margin as needed */
-    font-size: 14px; /* Adjust the font size as needed */
+    margin: 5px 0; 
+    font-size: 14px;
 }
 
 footer > div {
     display: flex;
     justify-content: space-between;
-    margin: 5px 0; /* Adjust the margin as needed */
+    margin: 5px 0; 
 }
 
 .socialMedia {
     display: flex;
     justify-content: space-around;
-    margin: 5px 0; /* Adjust the margin as needed */
+    margin: 5px 0; 
+    font-size: 18px;
 }
 
-.socialMedia > p {
+.socialMedia > a {
+    text-decoration: none;
+    cursor: pointer;
     color: black;
-    margin: 5px 10px; /* Adjust the margin as needed */
-    font-size: 12px; /* Adjust the font size as needed */
-}
-
-.ubicacion {
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0; /* Adjust the margin as needed */
+    margin: 5px 10px; 
 }
 
 .ubicacion > p {
     color: black;
-    margin: 5px 0; /* Adjust the margin as needed */
-    font-size: 12px; /* Adjust the font size as needed */
+    margin: 5px 10px; 
 }
+
+
 
