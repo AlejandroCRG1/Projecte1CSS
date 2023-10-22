@@ -1,21 +1,51 @@
+@font-face {
+    font-family: myFont;
+    src: url(GODOFWAR.TTF);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.triangle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.triangle-0 {
+  width: 60px;
+  height: 60px;
+  border-bottom: solid 30px #314453;
+  border-right: solid 30px #00ffdd;
+  border-left: solid 30px transparent;
+  border-top: solid 30px transparent;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    margin: -1em 1.5em;
     margin-right: 6em;
     align-items: center;
 }
 
-header > h1 {
-    font-size: 60px;
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding-left: 2em;
+}
+
+header > div > h1 {
+    font-size: 50px;
 }
 
 li {
@@ -24,7 +54,7 @@ li {
 }
 
 a {
-    color: black;
+    color: #314453;
     text-decoration: none;
     font-weight: bold;
 }
@@ -35,7 +65,6 @@ a {
 
 .gameImage {
     width: 140%;
-    height: 65vh;
     background-image: url('https://wallpaperaccess.com/full/1963988.jpg');
     background-size: cover;
     background-position: center;
@@ -43,34 +72,41 @@ a {
 }
 
 .gameStatistcsContainer {
-    text-align: center;
     width: 100%;
     align-items: center;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 20px;
 }
 
 .title {
     font-size: 100px;
     line-height: 0.4;
     letter-spacing: -1;
+    font-family: myFont;
+    font-weight: 100;
 }
 
-.tContainer {
+header > div > h1 {
+    color: #314453;
+}
+
+.textContainer {
     text-align: left;
     width: min-content;
-    border: 2px solid red;
+    margin: 0 auto;
 }
 
-.overviewContainer {
-    color: white;
-    background-color:#424549;
-}
 
 .datePlataformsContainer {
     display: flex;
     justify-content: center;
-    border: 2px solid red;
+    gap: 175px;
+    text-align: left;
+}
+
+.datePlataformsContainer > div > p {
+    color: #424549cc;
 }
 
 .notaJuego {
@@ -78,11 +114,75 @@ a {
     font-size: 40px;
 }
 
-span {
+.rating {
     font-size: 100px;
     background: linear-gradient(to bottom, #00ac64, #00ffdd);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.review {
+    background: linear-gradient(to bottom, #314453, #00ffdd);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.overviewContainer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color:#424549;
+}
+
+.biggerSections {
+    display: flex;
+    flex: 1;
+    margin: 1em;
+    justify-content: center;
+    gap: 1em;
+}
+
+.overviewSections {
+    flex: 1;
+    margin: 2em 0;
+    text-align: center;
+}
+
+.overviewSections > p {
+    text-align: left;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+.overviewContainer2 {
+    display: flex;
+    flex-direction: column;
+    color: #314453;
+    background-color:#b8bbbf;
+}
+
+.biggerSections2 {
+    display: flex;
+    flex: 1;
+    margin: 1em;
+    justify-content: center;
+    gap: 1em;
+}
+
+.overviewSections2 {
+    flex: 1;
+    margin: 2em 0;
+    text-align: center;
+}
+
+.overviewSections2 > p {
+    text-align: left;
 }

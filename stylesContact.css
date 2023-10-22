@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39;');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39;');
+
+body {
+    background-color: #5f636838;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.triangle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.triangle-0 {
+  width: 60px;
+  height: 60px;
+  border-bottom: solid 30px rgb(0, 0, 0);
+  border-right: solid 30px rgb(0, 0, 0);
+  border-left: solid 30px transparent;
+  border-top: solid 30px transparent;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding-left: 2em;
+}
+
+header > div > h1 {
+    font-size: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
+}
+
+header {
+    box-sizing: border-box;
+    height: 15vh;
+    width: 100%;
+    background-color: #0A91AB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #FFC045;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: +1;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+ul > a:hover {
+    color: #0A91AB; 
+}
+
+footer {
+    background-color: #8A8070;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px; 
+}
+
+footer > p {
+    margin: 5px 0; 
+    font-size: 14px;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0; 
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0; 
+    font-size: 18px;
+}
+
+.socialMedia > a {
+    text-decoration: none;
+    cursor: pointer;
+    margin: 5px 10px; 
+}
+
+.ubicacion > p {
+    margin: 5px 10px; 
+}
+
+
+form {
+    max-width: 400px;
+    margin: 2em auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; 
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+iframe {
+    border-style: initial; 
+    border-width: 0px; 
+    margin: 1em auto;
+}
+
+h2 {
+    color: #0A91AB;
+    text-align: center;
+}

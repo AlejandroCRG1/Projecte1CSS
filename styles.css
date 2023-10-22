@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39;');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39;');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.triangle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.triangle-0 {
+  width: 60px;
+  height: 60px;
+  border-bottom: solid 30px rgb(0, 0, 0);
+  border-right: solid 30px rgb(0, 0, 0);
+  border-left: solid 30px transparent;
+  border-top: solid 30px transparent;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding-left: 2em;
+}
+
+header > div > h1 {
+    font-size: 50px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -57,7 +92,6 @@ h2 {
 
 .vSection {
     display: flex;
-    flex-wrap: wrap;
     gap: 2.75em;
     padding-left: 2em;
     padding-right: 2em;
@@ -247,6 +281,4 @@ footer > div {
     color: black;
     margin: 5px 10px; 
 }
-
-
 
